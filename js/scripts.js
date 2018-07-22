@@ -13,7 +13,7 @@
 // });
 
 $(document).ready(function() {
-  $("#show").submit(function(event) {
+  $("form#show").submit(function(event) {
     event.preventDefault();
 
     //Handle 1st Image Render
