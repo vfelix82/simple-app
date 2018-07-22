@@ -10,6 +10,13 @@
 
 #img1,
 #img2 {
-  display: none;
   width: 500px;
+}
+
+.hide {
+  display: none;
+}
+
+.center {
+  text-align: center;
 }

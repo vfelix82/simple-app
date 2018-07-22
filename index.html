@@ -5,28 +5,37 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css" type="text/css" media="all">
     <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
     <title>Beach Photo </title>
   </head>
   <body>
-    <h1>Photo of Beach </h1>
-    <h4>Click button below to see a photo of a beach</h4>
-    <br>
-    <div class="container">
-      <form id="show">
-        <button type="submit" class="btn btn-primary btn-margin">Show</button>
-        <br>
-
-      </form>
+    <div class="container center">
+      <h1>Photo of Beach </h1>
+      <h4>Click button below to see a photo of a beach</h4>
       <br>
-      <div id="img">
-
-      </div>
-      
-      <div class="image1">
-        <img src="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg" alt="photo of beach" id="img1">
-        <img src="https://images.pexels.com/photos/247600/pexels-photo-247600.jpeg" alt="photo of lake" id="img2">
+      <button
+        id="imgButton"
+        class="btn btn-primary btn-margin"
+        onclick="togglePictures()"
+      >
+        Show
+      </button>
+      <br>
+      <br>
+      <div>
+        <img
+          src="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg"
+          alt="photo of beach"
+          class="hide"
+          id="img1"
+        >
+        <img
+          src="https://images.pexels.com/photos/247600/pexels-photo-247600.jpeg"
+          alt="photo of lake"
+          class="hide"
+          id="img2"
+        >
       </div>
     </div>
   </body>
+  <script src="js/scripts.js"></script>
 </html>
